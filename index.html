@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+     <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="calc-box">
+        <div class="calc-box-header">
+            <div class="dark-light">
+                <div class="imageBox">
+                    <img class="darkLightBtn" alt="sun/moon">
+                </div>
+            </div>
+            <input class="display" type="text" readonly>
+        </div>
+        <div class="calc-box-btns">
+            <button type="button" class="calc-btn C-btn" onclick="clearDisplay()">C</button>
+            <button type="button" class="calc-btn divide-btn" onclick="addSym('/')">&divide;</button>
+            <button type="button" class="calc-btn x-btn" onclick="addSym('*')">X</button>
+            <button type="button" class="calc-btn remove-num-btn" onclick="deletelastItem()">&lt;</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">7</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">8</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">9</button>
+            <button type="button" class="calc-btn minus-btn" onclick="addSym('-')">-</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">4</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">5</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">6</button>
+            <button type="button" class="calc-btn plus-button" onclick="addSym('+')">+</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">1</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">2</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">3</button>
+            <button type="button" class="calc-btn equal-btn" onclick="result()">=</button>
+            <button type="button" class="calc-btn sym-btn" onclick="addNum(this)">.</button>
+            <button type="button" class="calc-btn num-btn" onclick="addNum(this)">0</button>
+            <button type="button" class="calc-btn sym-btn" onclick="addNum(this)">&lpar;</button>
+            <button type="button" class="calc-btn sym-btn" onclick="addNum(this)">&rpar;</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
